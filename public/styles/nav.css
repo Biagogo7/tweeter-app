@@ -1,0 +1,42 @@
+/*
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * https://css-tricks.com/international-box-sizing-awareness-day/
+ * Do not modify these two selectors, please
+ */
+ html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*
+ * Global layout stuff
+ */
+
+nav {  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  padding: 1.5em;
+  z-index: 2;
+  /* font-family: 'Bungee', cursive; */
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.tweet {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*
+ * Additional CSS can be defined below or in other CSS files, as per instructions
+
+ <i class="fas fa-angle-double-down"></i>
+ */

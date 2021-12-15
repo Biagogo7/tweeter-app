@@ -1,0 +1,75 @@
+/*
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * https://css-tricks.com/international-box-sizing-awareness-day/
+ * Do not modify these two selectors, please
+ */
+ html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*
+ * Global layout stuff
+ */
+
+.header {  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 400px;
+  background-color: #a17740;
+  background-image: url("https://www.transparenttextures.com/patterns/little-triangles.png");
+  color: #FFFFFF;
+  z-index: 1;
+    
+}
+
+.tweet {
+  display: flex;
+  flex-direction: column;
+  column-gap: 1em;
+}
+
+.tweeto {
+  display: flex;
+  /*border-style: solid;*/
+  justify-content: center;
+  width: 280px;
+  height: 270px;
+  align-items: center;
+    
+  /*padding: 0.1em;*/
+}
+
+.tweeta {
+  display: flex;
+  justify-content: center;
+  /*border-style: solid;*/
+  align-items: center;
+  /*width: 200px;*/
+  /*height: 50px;*/
+  padding: 0.2em;
+}
+
+
+
+
+
+ /*
+ * Additional CSS can be defined below or in other CSS files, as per instructions
+
+ <i class="fas fa-angle-double-down"></i>
+ 
+ background-color: #b06100;
+background-image: url("https://www.transparenttextures.com/patterns/little-triangles.png");
+This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! 
+ 
+ */
+
+
+
+
+ 
