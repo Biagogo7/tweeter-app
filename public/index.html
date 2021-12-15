@@ -34,16 +34,16 @@
 
   <!-- Top nav bar (fixed) -->
 
-  <div class="container1">
-    <nav class="container2">
+  <div>
+    <nav>
       <span class="box a" style="font-family: 'Bungee', cursive">tweeter</span>
       <div class="tweet">
         <span class="box b"><strong> Write</strong> a new tweet </span>
         <i class="fas fa-angle-double-down"></i>
       </div>
-
+  
     </nav>
-
+  
     <header class="header">
       <div class="tweet">
         <div class=tweeto>
@@ -55,6 +55,7 @@
         </div>
       </div>
     </header>
+  
   </div>
   <!-- Page-specific (main) content here -->
 
@@ -77,42 +78,55 @@
 
       </form>
     </section>
-
+    <br>
+    <br>
+    <!-- <br>
+    <br> -->
     <section class="tweet-container"> 
+      <article>
+        <form class="tweet-contform" ></form>
+          <header>
+            <!-- <form class="tweet-contform" > -->
+            <div class="user-logo">
+              <div>
+                <img src="/images/smileys/emoji1.jfif" style="width:28px; height:28px;">
+                <label>Rhonda Jacobs</label>
+              </div> 
+              <div> 
+                <output name="userhandle" class="userhandle" for="tweet-body">@SirIsaac</output>
+              </div> 
+            </div>
+            <br>
+            <!-- <br> -->
+            <div><textarea name="text" id="tweet-body"> if I have seen further it is by standing on the shoulders of giants</textarea></div>
+          </header>
+          
+          <footer class="article-footer">
+            <span>
+              <label>10 days ago</label>
+            </span> 
 
-      <form class="tweet-contform" >
-        <div class="username">
-            <button id="tweetbutton" type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
-          </div>
+            <span>
+              <div>
+                <i class="fas fa-flag" id="a"></i>
+                <i class="fas fa-retweet" id="b"></i>
+                <i class="fas fa-heart" id="c"></i>
+              </div>
+            </span>
+                      
+          </footer>
+
+          <br>
+          <br>
+
+        </form>
 
 
 
 
 
 
-
-
-      <!-- <form class="tweetform" action="/tweets" method="POST">
-        <div>
-          <label for="tweet-text">What are you humming about?</label>
-          <div><textarea name="text" id="tweet-text"></textarea></div>
-        </div>
-        <div>
-          <div class="tweet-bottom">
-            <button id="tweetbutton" type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
-          </div>
-        </div> -->
-
-      </form>
-
-
-
-
-
-
-
+      </article>
     </section>
 
   </main>
@@ -122,6 +136,3 @@
 </html>
 
 
-<!-- <!--font-family: 'Bungee', cursive;
-
-  maxlength="140" -->
