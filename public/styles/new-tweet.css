@@ -99,3 +99,28 @@
   color: rgb(192, 130, 37);
 }
 
+.error {
+  display: flex;
+  justify-content: center;
+	border: 1px solid;
+	margin: 10px auto;
+	padding: 10px 5x 10px 30px;
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	max-width: 650px;
+  color: #D8000C;
+	background-color: #FFBABA;
+}
+
+.error1 {
+  display: flex;
+  justify-content: center;
+	border: 1px solid;
+	margin: 10px auto;
+	padding: 10px 5x 10px 30px;
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	max-width: 650px;
+  color: #7000d8;
+	background-color: #FFBABA;
+}

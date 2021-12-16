@@ -122,13 +122,20 @@ $(document).ready(function() {
   const tweetStr = $("#tweet-text").val();
  
     //post method using jQuery
-  $.post( "/tweets", $( "#tweet-text" ).serialize() );
-  
+  $.post( "/tweets", $( "#tweet-text" ).serialize(), reLoadpage);  
+
+    
   })
 
+  //  reloads pages automatically after submitting tweets.
+  const reLoadpage = (function() {
+    location.reload();
+  });
 
 
-
+  // $(".error").click(function(){
+  //   $(".error").hide();
+  // });
   
 });
 
@@ -150,18 +157,12 @@ $(document).ready(function() {
 //    type: 'POST',
 //    url: "/tweets",
 //    data: { 
-//      //You dont need to send user data becaues you are setting the user variable with $_SESSION in php file
-//      message: userMessage     
+//     message: tweetStr   
 //    },
-//     success: function(msg){
- 
- 
-//     alert('Message Sent');
- 
-//        }
-//     });
- 
-//  return false;
-//  });
+//    success: null,
+     
+// return false;
+
+// });
 
 

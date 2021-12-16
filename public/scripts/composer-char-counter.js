@@ -2,6 +2,10 @@
 $(document).ready(function() {
   // --- our code goes here ---
 
+  $(".error").hide();
+  $(".error1").hide();
+
+
   $('#tweet-text').on('input', function() {
     const charUsed = this.value;
     const charLeft = 140 - this.value.length;
@@ -11,14 +15,12 @@ $(document).ready(function() {
     counter.text(charLeft);
     //counter[0].innerHTML = charLeft;
 
-    // if (charUsed < 0) {
-    //   alert("No tweet entered!")
-    // }
-
+    //hides the error message unless more than 140 characters are typed.
+    
     if (charLeft < 1) {
       counter.addClass("toggleRed");
-      alert("Tweet length exceeded!")
-      //$('#tweetbutton').attr("disabled", true);
+      $(".error").show();
+      //alert("Tweet length exceeded!");
     
     } else {
       counter.removeClass("toggleRed");
@@ -30,13 +32,13 @@ $(document).ready(function() {
 
   $("#tweetbutton").on('click', function() {
     if (!$("#tweet-text").val()) {
-      alert("No tweet entered!");
+      $(".error1").show();
+      //alert("No tweet entered!");
     }
 
   })
 
 
 });
-
 
 

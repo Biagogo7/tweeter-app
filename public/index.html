@@ -66,6 +66,8 @@
 
     <section class="new-tweet">
       <h2>Compose Tweet</h2>
+      <div class="error">😈Too long! Please make your tweet 140 characters or less!👿</div>
+      <div class="error1">🐱Please type a tweet!🐱</div>
       <form class="tweetform" action="/tweets" method="POST">
         <div>
           <label for="tweet-text">What are you humming about?</label>
@@ -74,7 +76,7 @@
         <div>
           <div class="tweet-bottom">
             <button id="tweetbutton" type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
+            <output name="counter" class="counter" for="tweet-text"><strong>140</strong></output>
           </div>
         </div>
 
