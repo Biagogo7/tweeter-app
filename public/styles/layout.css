@@ -39,7 +39,11 @@ body {
   border-color: coral;
   background-color: blue;
   color: white;
-  
+ 
+}
+
+#tweetbutton:hover {
+  color: rgb(192, 130, 37);
 }
 
 

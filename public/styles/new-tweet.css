@@ -52,6 +52,11 @@
   margin: auto;
 }
 
+#tweet-container {  
+  width: 80%;
+  margin: auto;
+}
+
 #tweet-body {
   /* display: flex;
   align-items: center;
@@ -68,6 +73,8 @@
 #tweet-body:focus {
   outline: 0;
 }
+
+/* tweet container section  */
 
 .user-logo {
   display: flex;
@@ -91,3 +98,4 @@
 #c:hover {
   color: rgb(192, 130, 37);
 }
+
