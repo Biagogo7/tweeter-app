@@ -16,47 +16,14 @@ $(document).ready(function() {
 
     });   
   }
-  
-
-  
+    
   loadTweets();
 
-  //tweetObj = loadTweets();
-  // [
-  //   {
-  //     "user": {
-  //       "name": "Newton",
-  //       "avatars": "https://i.imgur.com/73hZDYK.png",
-  //       "handle": "@SirIsaac"
-  //     },
-
-  //     "content": {
-  //       "text": "If I have seen further it is by standing on the shoulders of giants"
-  //     },
-      
-  //     "created_at": 1639391659307
-  //   },
-
-  //   {
-  //     "user": {
-  //       "name": "Descartes",
-  //       "avatars": "https://i.imgur.com/nlhLi3I.png",
-  //       "handle": "@rd"
-  //     },
-
-  //     "content": {
-  //       "text": "Je pense , donc je suis"
-  //     },
-
-  //     "created_at": 1639478059307
-  //   }
-  // ]
-
+  //function to create the tweets received from the get request from the server.
   const createTweetElement = function(tweet) { 
 
-
       const $tweet = $(`
-        <article>
+        <article class="tweet-artcle">
           <form class="tweet-contform" ></form>
             <header>
             
@@ -103,27 +70,25 @@ $(document).ready(function() {
       `)
 
       $("#tweet-container").prepend($tweet);
-    }
+  }
 
+  //function to render the tweets to the page
   const renderTweets = function(tweets) {
-    console.log('tweets', tweets)
-    for (const tweet of tweets) {
+      for (const tweet of tweets) {
       createTweetElement(tweet);
-      console.log('tweets', tweet)
     }
   }
 
-
-
+// listener for the form submission
   $(".tweetform").on('submit', function(event){
 
   event.preventDefault();
-
+  
+  //capturing the value of the form
   const tweetStr = $("#tweet-text").val();
  
     //post method using jQuery
   $.post( "/tweets", $( "#tweet-text" ).serialize(), reLoadpage);  
-
     
   })
 
@@ -131,38 +96,5 @@ $(document).ready(function() {
   const reLoadpage = (function() {
     location.reload();
   });
-
-
-  // $(".error").click(function(){
-  //   $(".error").hide();
-  // });
   
 });
-
-
-
-
-
-
-
-
-
-
-
-// $('.tweetform').submit(function(e){
-//   e.preventDefault();
-//   const tweetStr = $("#tweet-text").val();
- 
-//   $.ajax({
-//    type: 'POST',
-//    url: "/tweets",
-//    data: { 
-//     message: tweetStr   
-//    },
-//    success: null,
-     
-// return false;
-
-// });
-
-

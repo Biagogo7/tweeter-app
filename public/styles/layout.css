@@ -16,14 +16,13 @@ html {
 .container {
   display: flex;
   flex-direction: column;
-  /*position: relative;*/
-  width: 90%;
   background-color: #f4f1ec;
   justify-content: center;
   align-items: center;
 }
 
 body {
+  width: 100%;
   display: flex;
   flex-direction: column;
   padding-top: 120px;
@@ -46,9 +45,22 @@ body {
   color: rgb(192, 130, 37);
 }
 
-
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
  
+@media only screen and (min-width: 1025px) {
+  .header {
+    border: 3px solid red;
+    flex: 1;
+    margin: 80px 40px;
+  }
+
+  .tweetcontainer {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+} 

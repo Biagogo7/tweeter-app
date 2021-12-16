@@ -23,7 +23,6 @@ nav {
   color: #e2eef0;
   padding: 1.5em;
   z-index: 2;
-  /* font-family: 'Bungee', cursive; */
   position: fixed;
   top: 0;
   width: 100%;
@@ -38,5 +37,5 @@ nav {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
 
- <i class="fas fa-angle-double-down"></i>
- */
+
+
