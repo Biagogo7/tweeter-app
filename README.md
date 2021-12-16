@@ -17,7 +17,7 @@ Tweeter is a simple, single-page Twitter clone.
 
 ## Final Product
 
-!["screenshot of shortURLs page"](https://github.com/Biagogo7/tinyapp/blob/master/docs/shortURL-page.PNG?raw=true)
+!["screenshot of tweeter page"](https://github.com/Biagogo7/tweeter-app/blob/master/doc/tweeter-Page.PNG?raw=truePNG?raw=true)
 
-!["screenshot of URLs page"](https://github.com/Biagogo7/tinyapp/blob/master/docs/urls-page.PNG?raw=true)
+!["screenshot of tweeter chatbox page"](https://github.com/Biagogo7/tweeter-app/blob/master/doc/tweeter-Page2.PNG?raw=true)
 
