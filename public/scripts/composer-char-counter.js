@@ -20,10 +20,12 @@ $(document).ready(function() {
     if (charLeft < 1) {
       counter.addClass("toggleRed");
       $(".error").show();
+      $('#tweetbutton').prop('disabled', true);
       //alert("Tweet length exceeded!");
     
     } else {
       counter.removeClass("toggleRed");
+      $('#tweetbutton').prop('disabled', false);
     }
       
   });
